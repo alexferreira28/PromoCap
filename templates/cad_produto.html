@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Cadastro de usuario {% endblock %}
+
+{% block body %}
+
+<div id="logo">
+        <h4>promocap</h4>
+    </div>
+
+
+ <div id="product-container">
+    <h1>CADRASTRO DE PRODUTOS </h1>
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    tipo de produto
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="promo" href="#">Beleza</a></li>
+    <li><a class="novo" href="#">Esporte</a></li>
+    <li><a class="novo" href="#">Equipamento Eletronicos</a></li>
+
+  </ul>
+</div>
+    <form >
+    <div class="form-group1">
+        <label for="nome">Nome do produto:</label>
+        <input type="text" name="name" id="name" placeholder="digite o nome do produto...">
+
+    </div>
+    <div class="form-group1">
+        <label for="descricao">Digite a descriçãodo produto:</label>
+        <input type="text" name="descrição" id="descricao" placeholder="digite o local de endereço...">
+    </div>
+    <div class="form-group1">
+        <label for="valor">Digite o valor do produto:</label>
+        <input type="text" name="valor" id="valor" placeholder="Digite o valor do produto...">
+    </div>
+
+
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Ver opcições de cadrastro
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="promo" href="#">cadastrar como promoção?</a></li>
+    <li><a class="novo" href="#">Adicionar como produto novo?</a></li>
+    <li><a class="novo" href="#">Adicionar a lista de produtos.</a></li>
+
+  </ul>
+</div>
+        <div class="bot-success">
+            <button type="button" class="btn btn-success">Cadastrar</button>
+        </div>
+    </form>
+   </div>
+</div>
+
+</form>
+
+{% endblock %}

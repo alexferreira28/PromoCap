@@ -3,18 +3,29 @@
 
 {% block title %}Login{% endblock %}
 {% block body %}
-<h1>Login</h1>
-<form>
-    <div>
-        <label>Usuário:</label>
-        <input type="text" name="name" id="name">
+  <body>
+    <div id="logo">
+        <h2>PROMOCAP</h2>
     </div>
-    <div>
-        <label>Senha:</label>
-        <input type="password" name="mail" id="mail">
+
+    <div id="login-container">
+        <h1>login</h1>
+        <form action="">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"placeholder="Digite seu email" autocompletar="off">
+            <label for="passaword">senha</label>
+            <input type="passaword" name="passaword" id="passaword"placeholder="Digite sua senha">
+            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+            <input type="submit" value="Login">
+
+        </form>
+        <div id="Registrar-container">
+            <p>Ainda não é cadastrado em nosso site?</p>
+            <a href="cad_usuario">Registrar</a>
+        </div>
     </div>
-    <div>
-        <input type="submit" value="Enviar">
-    </div>
-</form>
+
+  </body>
+</html>
+
 {% endblock %}

@@ -1,21 +1,47 @@
-{% extends 'menu.html' %}
+{% extends 'base.html' %}
 {% load static %}
-
 {% block title %}Cadastro de usuario {% endblock %}
-
 {% block body %}
-<h1>Cadastro de usuario</h1>
-<form>
-    <div>
-        <label>Nome do usuario:</label>
-        <input type="text" name="name" id="name">
+
+ <div id="logo">
+        <h3>promocap</h3>
     </div>
-    <div>
-        <label>E-mail:</label>
-        <input type="text" name="mail" id="mail">
+
+
+ <div id="cadastro-conteiner">
+
+
+    <h1>CADRASTRO</h1>
+    <form >
+    <div class="form-group">
+        <label for="nome">Nome da empresa:</label>
+        <input type="text" name="name" id="name" placeholder="digite o nome da empresa...">
     </div>
-    <div>
+    <div class="form-group">
+        <label for="endereco">Digite o local de endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="digite o local de endereço...">
+    </div>
+    <div class="form-group">
+        <label for="bairro">Digite o nome do bairro:</label>
+        <input type="text" name="bairro" id="bairro" placeholder="Digite o nome do bairro aonde a empresa esta localizada...">
+    </div>
+    <div class="form-group">
+        <label for="email"> E-mail:</label>
+        <input  type="email" name="mail" id="mail" placeholder="digite o seu email...">
+    </div>
+        <div class="form-group">
+            <label for="senha">Digite uma senha para o login:</label>
+            <input type="passaword" name="passaword" id="passaword"placeholder="Digite uma senha para o login...">
+        </div>
+    <div class="form-group">
         <input type="submit" value="Enviar">
     </div>
+    <button class="bot" type="button" name="enviar"></button>
+    </form>
+   </div>
+
+
+</div>
+
 </form>
 {% endblock %}
