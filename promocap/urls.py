@@ -14,15 +14,37 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
-from app import views
-from django.urls import path
-
+from django.urls import path, include
+from django.contrib.auth import views as auth_views
+from app.views import form, usuario, create, ver, update, edit, delete, produto, form2, menu, login,createprod, verproduto, editproduto, updateproduto, deleteproduto
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login', views.login),
-    path('cad_usuario', views.cad_usuario),
-    path('menu', views.menu),
-    path('cad_produto', views.cad_produto),
+
+    #path('accounts/', include('django.contrib.auth.urls')),
+    path('admin', admin.site.urls,name= 'admin'),
+
+
+    path('menu', menu, name='nemu'),
+    path('login', login, name='login'),
+    ############################usuario#########################################
+    path('usuario', usuario, name='usuario'),
+    path('form', form, name='form'),
+    path('create', create, name= 'create'),
+    path('ver<int:pk>', ver, name='ver'),
+    path('edit<int:pk>', edit, name='edit'),
+    path('update<int:pk>', update, name='update'),
+    path('delete<int:pk>', delete, name='delete'),
+    #################################produto######################################
+    path('produto', produto, name='produto'),
+    path('form2', form2, name='form2'),
+    path('createprod', createprod, name='createprodproduto'),
+    path('verproduto<int:pk>', verproduto, name='verproduto'),
+    path('editproduto<int:pk>', editproduto, name='editproduto'),
+    path('updateproduto<int:pk>', updateproduto, name='updateproduto'),
+    path('deleteproduto<int:pk>', deleteproduto, name='deleteproduto'),
+
+    #path('accounts'.include('django.contrib.auth.urls')),
+    #path('createprod', createprod, name='createprod'),
+
 ]
+
+

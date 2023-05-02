@@ -10,7 +10,8 @@
 
     <div id="login-container">
         <h1>login</h1>
-        <form action="">
+        <form method="post">
+            {% csrf_token %}
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email"placeholder="Digite seu email" autocompletar="off">
             <label for="passaword">senha</label>
@@ -21,7 +22,7 @@
         </form>
         <div id="Registrar-container">
             <p>Ainda não é cadastrado em nosso site?</p>
-            <a href="cad_usuario">Registrar</a>
+            <a href="form">Registrar</a>
         </div>
     </div>
 
