@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} usuario{% endblock %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+    <div class=" col-8 m-auto pt-2 pb-2 text-center">
+        <h1> PRODUTOS CADASTRADOS </h1>
+    </div>
+    <div class=" col-8 m-auto pt-3 pb-2 ">
+        <a href="form2" class="btn btn-dark btn-success">cadastrar produto</a>
+    </div>
+    <div class=" col-8 m-auto pt- pb-2 text-center">
+    <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">nome</th>
+      <th scope="col">descricao</th>
+      <th scope="col">tipo</th>
+      <th scope="col">valor</th>
+      <th scope="col">ações</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for dbs in db %}
+    <tr>
+      <th> {{dbs.id}}</th>
+      <td>{{dbs.nome}}</td>
+      <td>{{dbs.descricao}}</td>
+      <td>{{dbs.tipo}}</td>
+       <td>{{dbs.valor}}</td>
+      <td>
+          <a href="verproduto{{dbs.id}}" class="btn btn-dark">ver</a>
+          <a href="editproduto{{dbs.id}}" class="btn btn-primary">edit</a>
+          <a href="deleteproduto{{dbs.id}}" class="btn btn-danger btnDel">deletar</a>
+      </td>
+    </tr>
+    {% endfor %}
+    <tbody>
+    </table>
+  </div>
+{% load static %}
+<script src="{% static '/js/javascript.js' %}"></script>
+</body>
+</html>
+{% endblock %}

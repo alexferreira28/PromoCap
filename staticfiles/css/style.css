@@ -1,0 +1,224 @@
+header{
+background-color: #323232;
+}
+.logo{
+     color:yellow;
+     text-align: left;
+     font-family: "serif";
+     font-size: 100px;
+}
+.login{
+color:#fff;
+text-align: right;
+font-family:"georgia"
+font:100px;
+}
+
+.busca{
+text-align:right;
+margin-bottom:40px;
+}
+.form{
+width:400px;
+height:50px;
+border: solid 5px;
+border-radius: 10px;
+}
+
+.bota{
+background:#fff;
+
+}
+.carousel slide{
+width:400px;
+height:50px;
+}
+
+footer{
+background-color: #323232;
+}
+
+/* geral-login */
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    color: #323232;
+    border:none;
+}
+/* logo */
+#logo,h2{
+
+ text-align: left;
+ color: #fce303;
+    background-color: black;
+}
+
+
+body {
+background-image: url('../img/login01.jpeg');
+background-size: cover;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+a , label{
+    front-size: .8rem;
+}
+
+a: hover {
+    color: #0703fc
+
+}
+/* contener login */
+
+#login-container{
+ text-align: center;
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px
+
+}
+/* formulario*/
+form {
+margin-top: 30px;
+margin-bottom: 40px
+}
+label, input {
+display: block;
+width: 100%;
+text-align:left;
+}
+label {
+front- weight: bold;
+}
+input {
+border-bottom: 2px solid #323232;
+padding: 10px;
+front-size: 1rem;
+margin-bottom: 20px;
+}
+input:focus{
+border-bottom: 2px solid #28fc03;
+}
+#forgot-pass {
+text-align: right;
+display: block
+}
+input[type="submit"]{
+text-align: center;
+text-transform:uppercase;
+font-weight:bold;
+border: none;
+height: 40px;
+border-radius:20px;
+margin-top: 30px;
+color: #fff;
+background-color: black;
+cursor: pointer;
+}
+input[type="submit"]:hover{
+background-color: #52504e;
+transition: .5s;
+}
+
+
+/* geral-cadastro-cnpj */
+#h3,logo{
+padding-top 10vh;
+ text-align: left;
+ color: #fce303;
+    background-color: black;
+}
+#cadastro-conteiner{
+text-align:center;
+    background-color: #fff;
+    width: 800px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top:0;
+    border-radius: 10px
+
+}
+.form-group {
+front- weight: bold;
+border-bottom: 2px solid #323232;
+padding: 3px;
+front-size: 1rem;
+margin-bottom: 10px;
+font-weight:bold;
+margin: 0 ;
+padding: 0;
+box-sizing: border-box;
+color: #323232;
+border:none;
+}
+.bot{
+
+background-color: #52504e;
+transition: .5s;
+
+}
+
+/* geral-cadastro-produto */
+
+#h4,logo{
+padding-top 10vh;
+ text-align: left;
+ color: #fce303;
+    background-color: black;
+}
+#product-container{
+text-align:center;
+    background-color: #fff;
+    width: 650px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top:0;
+    border-radius: 10px
+
+}
+.form-group1 {
+front- weight: bold;
+border-bottom: 2px solid #323232;
+padding: 3px;
+front-size: 1rem;
+margin-bottom: 10px;
+font-weight:bold;
+margin: 0 ;
+padding: 0;
+box-sizing: border-box;
+color: #323232;
+border:none;
+}
+
+.dropdown{
+background-color: #323232;
+}
+.bot-success{
+padding: 20px;
+color: red;
+text-align: left;
+}
+
+#carouselExampleIndicators{
+}
+section{
+ width: 400px;
+ height: 300px;
+}
+.row1{
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-top:40px;
+    margin-right: auto;
+}
